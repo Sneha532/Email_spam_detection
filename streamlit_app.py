@@ -16,7 +16,7 @@ important_chars = {'!', '$'}
 custom_punctuation = set(string.punctuation) - important_chars
 
 # Load trained model
-model = pickle.load(open('email_spam_detection_model.pkl','rb'))  # Ensure this file exists
+model = pickle.load(open('model\email_spam_detection_model.pkl','rb'))  # Ensure this file exists
 
 # Feature names (must match model training)
 feature_names = ['word_freq_make',
